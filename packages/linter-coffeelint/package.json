@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11842-2714-1jpr51l.sc2ko11yvi"
+    ]
+  ],
+  "_from": "../d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+  "_id": "linter-coffeelint@2.0.0",
+  "_inCache": true,
+  "_location": "/linter-coffeelint",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+  "_shasum": "714bf2b4af8f1a9df3d17c715bc4155c3c9e33ed",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11842-2714-3u2ilq.7i1rjdobt9/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11842-2714-1jpr51l.sc2ko11yvi",
+  "activationHooks": [
+    "language-coffee-script:grammar-used",
+    "language-iced-coffee-script:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-coffeelint/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.6.1",
+    "coffeelint": "^2.1.0",
+    "ignore": "^3.3.7",
+    "resolve": "^1.5.0",
+    "semver": "^5.5.0"
+  },
+  "description": "Lint CoffeeScript on the fly, using coffeelint",
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jasmine-fix": "^1.3.1"
+  },
+  "engines": {
+    "atom": ">=1.7.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": false
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-coffeelint#readme",
+  "license": "MIT",
+  "main": "./src/index",
+  "name": "linter-coffeelint",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "private": true,
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "<!-- [![Stories in Ready](https://badge.waffle.io/AtomLinter/linter-coffeelint.png?label=ready&title=Ready)](https://waffle.io/AtomLinter/linter-coffeelint) -->\n\n[![Travis CI](https://travis-ci.org/AtomLinter/linter-coffeelint.svg?branch=master)](https://travis-ci.org/AtomLinter/linter-coffeelint)\n[![Appveyor](https://ci.appveyor.com/api/projects/status/hcq63kmaskumyea5?svg=true)](https://ci.appveyor.com/project/UziTech/linter-coffeelint)\n[![CircleCI](https://circleci.com/gh/AtomLinter/linter-coffeelint.svg?style=svg)](https://circleci.com/gh/AtomLinter/linter-coffeelint)\n[![Dependencies](https://david-dm.org/AtomLinter/linter-coffeelint/status.svg)](https://david-dm.org/AtomLinter/linter-coffeelint)\n\n#linter-coffeelint\n\nThis linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides an interface to\n[coffeelint](http://www.coffeelint.org/). It will be used with files that have the “CoffeeScript”\nor “CoffeeScript (literate)” syntax.\n\n## Installation\n[Linter](https://github.com/AtomLinter/Linter) or [Atom IDE UI](https://ide.atom.io/) must be\ninstalled to use this plugin. To install Linter please follow the instructions\n[here](https://github.com/AtomLinter/Linter).\n\n\n### Plugin Installation\n\n```sh\n$ apm install linter-coffeelint\n```\n\n## Settings\n\nAs of v0.2.0 there is no need to specify a path to coffeelint. If you need to use a specific\nversion you can specify it in your project's `package.json` and `linter-coffeelint` will use that\none. This is the same behavior the coffeelint commandline gives you.\n\n[How do I configure CoffeeLint?](https://github.com/clutchski/coffeelint/blob/master/doc/user.md)\n\n## Contributing\n\nIf you would like to contribute enhancements or fixes, please do the following:\n\n1.  Fork the plugin repository.\n1.  Hack on a separate topic branch created from the latest `master`.\n1.  Commit and push the topic branch.\n1.  Make a pull request.\n1.  Welcome to the club 🎊\n\nPlease note that modifications must follow the ESLint configuration.\n\nTo check if the code complies, you may run:\n\n```sh\n$ npm run lint\n```\n\n-   Indent is 2 spaces.\n-   Vertical whitespace helps readability, don’t be afraid to use it.\n\nThank you for helping out!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-coffeelint.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "2.0.0"
+}

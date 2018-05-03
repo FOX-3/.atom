@@ -1,0 +1,74 @@
+"*":
+  "advanced-open-file":
+    createFileInstantly: true
+    fuzzyMatch: true
+  "atom-beautify":
+    c:
+      configPath: "/usr/local/Cellar/clang-format"
+      default_beautifier: "clang-format"
+  "atom-terminal":
+    app: "iTerm.app"
+    surpressDirectoryArgument: false
+  autosave:
+    enabled: true
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    excludeVcsIgnoredPaths: false
+    openEmptyEditorOnStart: false
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Inconsolata-g, Hiragino Kaku Gothic ProN"
+    lineHeight: 1.3
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "9092f66f-8fef-43a1-b354-a46f842cd744"
+  "git-plus":
+    commits:
+      verboseCommits: true
+    general: {}
+  latex:
+    buildOnSave: true
+    customEngine: "latexmk"
+    engine: "uplatex"
+    opener: "pdf-view"
+    texPath: "/Library/TeX/texbin/TeX"
+  "linter-clang": {}
+  "linter-ui-default": {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+      "minimap-autohider": true
+      "minimap-autohiderDecorationsZIndex": 0
+  "pdf-view":
+    fitToWidthOnOpen: true
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    scrollSyncType: "Vertical + Horizontal"
+  swackets:
+    colorParens: true
+    colorSquareBrackets: true
+  "sync-settings":
+    _lastBackupHash: "1ee20caa1bfc448dba4d0822c3b34c6360bab529"
+    gistId: "07c3a670eb4e55615f33aff2ed17fca2"
+    personalAccessToken: "7cfb54dc7db995f1e494b9769991c6dcfc3ba54c"
+  welcome:
+    showOnStartup: false
