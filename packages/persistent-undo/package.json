@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-25372-8sp9rh.1y4ehzolxr"
+    ]
+  ],
+  "_from": "../d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+  "_id": "persistent-undo@1.3.0",
+  "_inCache": true,
+  "_location": "/persistent-undo",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+  "_shasum": "2354c384ce54becc3d4eb035e12a664bd95a396e",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-25372-4vekvl.l7l9rg4x6r/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-25372-8sp9rh.1y4ehzolxr",
+  "bugs": {
+    "url": "https://github.com/benwbooth/atom-persistent-undo/issues"
+  },
+  "dependencies": {},
+  "description": "Stores undo/redo history information in the user's ~/.atom folder",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/benwbooth/atom-persistent-undo#readme",
+  "keywords": [
+    "persistent",
+    "undo",
+    "save",
+    "redo",
+    "history"
+  ],
+  "license": "MIT",
+  "main": "./lib/persistent-undo",
+  "name": "persistent-undo",
+  "optionalDependencies": {},
+  "readme": "# persistent-undo package\n\nStores undo/redo history information in the user's ~/.atom folder\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benwbooth/atom-persistent-undo.git"
+  },
+  "version": "1.3.0"
+}

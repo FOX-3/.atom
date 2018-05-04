@@ -9,15 +9,22 @@
   "atom-terminal":
     app: "iTerm.app"
     surpressDirectoryArgument: false
+  "autocomplete-plus":
+    confirmCompletion: "enter"
   autosave:
     enabled: true
+  "bracket-matcher": {}
   core:
     closeDeletedFileTabs: true
     disabledPackages: [
       "wrap-guide"
+      "swackets"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "clipboard-plus"
+    ]
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
   editor:
@@ -27,8 +34,10 @@
     showIndentGuide: true
     softWrap: true
     tabLength: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "9092f66f-8fef-43a1-b354-a46f842cd744"
+  "expand-region": {}
   "git-plus":
     commits:
       verboseCommits: true
@@ -40,7 +49,9 @@
     opener: "pdf-view"
     texPath: "/Library/TeX/texbin/TeX"
   "linter-clang": {}
-  "linter-ui-default": {}
+  "linter-shellcheck": {}
+  "linter-ui-default":
+    showPanel: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -57,6 +68,8 @@
       "minimap-autohiderDecorationsZIndex": 0
   "pdf-view":
     fitToWidthOnOpen: true
+  "persistent-undo":
+    undoFolder: "undo-history"
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
@@ -78,8 +91,8 @@
       "#ffa0a0"
     ]
   "sync-settings":
-    _lastBackupHash: "1ee20caa1bfc448dba4d0822c3b34c6360bab529"
-    gistId: "07c3a670eb4e55615f33aff2ed17fca2"
-    personalAccessToken: "7cfb54dc7db995f1e494b9769991c6dcfc3ba54c"
+    _lastBackupHash: "3e582001582ea9d20c45663636a6be9ae3de7f59"
+    gistId: "c5f85be225ed1a3c01689137224d5f86"
+    personalAccessToken: "a329917659d3af7573578640748771b82ae7760f"
   welcome:
     showOnStartup: false
