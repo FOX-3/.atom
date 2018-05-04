@@ -66,6 +66,17 @@
   swackets:
     colorParens: true
     colorSquareBrackets: true
+    colors: [
+      "#7fffd4"
+      "#FAAC58"
+      "#72c572"
+      "#f78181"
+      "#F2F5A9"
+      "#66cdaa"
+      "#d26ca5"
+      "#6DB3D4"
+      "#ffa0a0"
+    ]
   "sync-settings":
     _lastBackupHash: "1ee20caa1bfc448dba4d0822c3b34c6360bab529"
     gistId: "07c3a670eb4e55615f33aff2ed17fca2"
