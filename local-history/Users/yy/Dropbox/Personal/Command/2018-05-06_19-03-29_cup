@@ -1,0 +1,11 @@
+#!/bin/sh
+# for cup ramen
+
+set -eu
+
+sec=170
+while [ $sec -ge 0 ]; do
+    echo -en "Waiting for $sec seconds...\033[0K\r"
+    sec=$(($sec - 1))
+    sleep 1
+done

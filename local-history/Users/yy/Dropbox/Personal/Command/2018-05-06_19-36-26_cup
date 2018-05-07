@@ -1,0 +1,12 @@
+#!/bin/bash
+# for cup ramen
+
+set -eu
+
+sec=3
+while [ $sec -ge 1 ]; do
+    echo -ne " Waiting for $sec seconds...\r"
+    sec=$(($sec - 1))
+    sleep 1
+done
+echo "Three minutes passed...    "

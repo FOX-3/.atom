@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# l's' color setting
+export DYLD_LIBRARY_PATH="/opt/intel/Compiler/11.1/076/lib:$DYLD_LIBRARY_PATH"
+export LSCOLORS="ExFxCxDxBxEGEDABAGACAD"
+
+# set aliases
+alias ls='\ls -FGv'
+alias ll='\ls -lhaGv'
+alias la='\ls -aGv'
+alias lsa='\ls -aGv'
+alias lns='\ln -s'
+
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+
+alias cup="sleep 170"
+alias cup5="sleep 290"
+
+alias texupdate="sudo tlmgr update --self --all"
+
+# プロンプトの設定
+# PS1="\[\033[34;1m\]\h \W> \[\033[0;0m\]" # orange
+# PS1="\[\033[31;1m\]\h \W> \[\033[0;0m\]" # purple
+PS1="\[\033[35;1m\]\h \W> \[\033[0;0m\]" # pink
+# PS1="\[\033[36;1m\]\h \W> \[\033[0;0m\]" # lightblue
+
+# PATH="/usr/local/bin:/opt/local/bin:${HOME}/bin:${HOME}/script:/Applications/UpTeX.app/teTeX/bin:${PATH}"
+PATH="/usr/local/bin:/opt/local/bin:${HOME}/bin:${HOME}/script:/Applications/UpTeX.app/teTeX/bin:${HOME}/Dropbox/Personal/Command:${PATH}"
+
+
+# TeXのPATHの設定
+export BSTINPUTS=$BSTINPUTS:~/Dropbox/Personal/BibTeX/
+export BIBINPUTS=$BIBINPUTS:~/Dropbox/Personal/BibTeX/
+export TEXINPUTS=$TEXINPUTS:~/Dropbox/Personal/BibTeX/
+
+
+
+# cde (change directory emacs)
+alias eclient="/usr/local/bin/emacsclient"
+function cde () {
+    EMACS_CWD=`eclient -e "
+      (if (featurep 'elscreen)
+          (elscreen-current-directory)
+        (non-elscreen-current-directory))" | sed 's/^"\(.*\)"$/\1/'`
+
+    if [[ $EMACS_CWD == "/Users/yy/"?* ]]; then
+    	echo "cd ~${EMACS_CWD:9}"
+    elif [[ $EMACS_CWD == "/Users/yamada/"?* ]]; then
+    	echo "cd ~${EMACS_CWD:13}"
+    else
+	echo "cd $EMACS_CWD"
+    fi
+    cd "$EMACS_CWD"
+}
+
+
+
+# 終了通知の設定
+# source ~/Dropbox/Personal/Command/bash-preexec.sh # ドットコマンドが使えなくなるので注意
+. "$ ~/Dropbox/Personal/Command/bash-preexec.sh" # ドットコマンドが使えなくなるので注意
+_tn_timestamp=`date +%s`
+_tn_cmd=''
+preexec() {
+    _tn_timestamp=`date +%s`
+    _tn_cmd=$1
+}
+precmd() {
+    prev_command_status=$?
+    now=`date +%s`
+    dur=$(( $now - $_tn_timestamp ))
+    min=$(printf "%02d" $(( $dur / 60 )))
+    sec=$(printf "%02d" $(( $dur % 60 )))
+    if [[ $_tn_cmd == "" ]] || [[ $_tn_cmd == "ssh"* ]]; then
+        return
+    fi
+    if [ $dur -lt 10 ]; then
+        return
+    elif [ $prev_command_status -eq 0 ]; then
+        osascript -e 'display notification "Time : '$min':'$sec'"  with title "Processing is Complete" sound name "Purr"'
+    else
+        osascript -e 'display notification "Time : '$min':'$sec'"  with title "Abnormal End" sound name "Sosumi"'
+    fi
+    _tn_cmd=''
+}
+preexec_functions+=(preexec)
+precmd_functions+=(precmd)

@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11846-30641-awfluq.ppphxmkj4i"
+    ]
+  ],
+  "_from": "../d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+  "_id": "japanese-word-selection@0.5.1",
+  "_inCache": true,
+  "_location": "/japanese-word-selection",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+  "_shasum": "6e179373720a791367ecb90cec23d6f0f392ab23",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11846-30641-pjoq02.5y84c84cxr/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11846-30641-awfluq.ppphxmkj4i",
+  "bugs": {
+    "url": "https://github.com/kaitoy/japanese-word-selection/issues"
+  },
+  "dependencies": {},
+  "description": "Japanize word boundary.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/kaitoy/japanese-word-selection#readme",
+  "keywords": [
+    "japanese",
+    "selection",
+    "word"
+  ],
+  "license": "MIT",
+  "main": "./lib/japanese-word-selection",
+  "name": "japanese-word-selection",
+  "optionalDependencies": {},
+  "readme": "# japanese-word-selection package\n\nワード境界を日本語対応させて、単語を選択しやすくするAtomパッケージ。\n\nAn Atom package which makes it easy to select a Japanese word by japanizing word boundary.\n\n![screenshot](https://github.com/kaitoy/japanese-word-selection/raw/master/assets/japanese-word-selection.gif)\n\n今のところ文字種の境目を判別しているだけ。\n\nひらがな、カタカナ、半角カタカナ、漢字に対応。\n\nダブルクリック、`Ctrl+Shift+Right Arrow`、`Ctrl+Shift+Left Arrow`で単語を選択できることを確認。\nまた、`Ctrl+Delete`で単語を削除できることも確認。\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaitoy/japanese-word-selection.git"
+  },
+  "version": "0.5.1"
+}

@@ -1,0 +1,5 @@
+#!/bin/sh
+# for cup ramen
+
+# set -Cue
+set -eu

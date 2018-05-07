@@ -1,0 +1,147 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/customizing-keybindings
+# http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# http://flight-manual.atom.io/hacking-atom/sections/debugging/check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+
+# ------------------------------------------------------------------------------
+'atom-workspace atom-text-editor:not([mini])':
+
+# コメントアウト
+  'cmd-;': 'editor:toggle-line-comments'
+
+# カーソル行の上に空行を挿入
+  'ctrl-cmd-o': 'editor:newline-above'
+
+# 無効化
+  'cmd-j': 'unset!'
+
+
+# ------------------------------------------------------------------------------
+'atom-workspace':
+
+# カーソル位置のundo, redo
+  'cmd-j': 'last-cursor-position:previous'
+  'cmd-k': 'last-cursor-position:next'
+
+# ファイルのディレクトリをiTermで開く
+  'ctrl-cmd-l': 'atom-terminal:open'
+
+# ------------------------------------------------------------------------------
+'atom-text-editor':
+
+# 括弧内の選択範囲拡大or縮小
+  'ctrl-\'': 'expand-region:expand'
+  'ctrl-"': 'expand-region:shrink'
+
+# 段落選択
+  'ctrl-s': 'expand-region:select-inside-paragraph'
+
+# ブックマーク
+  'ctrl-f2': 'bookmarks:view-all'
+  'f2': 'bookmarks:jump-to-next-bookmark'
+  'shift-f2': 'bookmarks:jump-to-previous-bookmark'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-workspace':
+
+# ファイルオープン
+  'alt-cmd-o': 'unset!'
+  'cmd-t': 'advanced-open-file:toggle'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-text-editor':
+
+# スペルチェック
+  'cmd-:': 'abort!'
+  'ctrl-u ctrl-s': 'spell-check:correct-misspelling'
+
+# ブックマーク
+  'cmd-f2': 'bookmarks:toggle-bookmark'
+
+# ------------------------------------------------------------------------------
+'.platform-darwin .corrections atom-text-editor':
+
+# スペルチェック
+  'cmd-:': 'unset!'
+  'ctrl-u ctrl-s': 'core:cancel'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-text-editor:not([mini])':
+
+# クリップボードの呼び出し
+  'ctrl-cmd-k': 'clipboard-plus:toggle'
+
+# マルチカーソル
+  'cmd-up':   'multi-cursor:expandUp'
+  'cmd-down': 'multi-cursor:expandDown'
+
+
+# ------------------------------------------------------------------------------
+'body':
+
+# 貼り付け、切り取り
+  'ctrl-y': 'core:paste'
+  'ctrl-w': 'core:cut'
+
+# タブ移動
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+
+# undo, redo
+  'ctrl-j': 'core:undo'
+  'ctrl-cmd-j': 'core:redo'
+  'ctrl-shift-j': 'core:redo'
+
+# 無効
+  'cmd-up':   'unset!'
+  'cmd-down': 'unset!'
+
+# ペイン分割
+  'cmd-3': 'pane:split-right-and-copy-active-item'
+  'cmd-4': 'pane:split-down-and-copy-active-item'
+
+# ペインのフォーカス移動
+  'ctrl-g': 'window:focus-next-pane'
+
+# ------------------------------------------------------------------------------
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+
+# コマンドパレット
+  'ctrl-cmd-p': 'command-palette:toggle'
+
+
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------

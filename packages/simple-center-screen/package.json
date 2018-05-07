@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-28375-49g6dg.4txlfy9zfr"
+    ]
+  ],
+  "_from": "../d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+  "_id": "simple-center-screen@1.3.0",
+  "_inCache": true,
+  "_location": "/simple-center-screen",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+  "_shasum": "6686c9094026a9efeeadfcbbb76a61f0f4e02f67",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-28375-18knjkb.k05dgnl8fr/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-28375-49g6dg.4txlfy9zfr",
+  "activationCommands": {
+    "atom-workspace": "simple-center-screen:toggle"
+  },
+  "author": {
+    "name": "Shaun Wei",
+    "email": "shaunweix@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/shaunwei/atom-center-screen/issues"
+  },
+  "dependencies": {},
+  "description": "Center cursor of screen",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/shaunwei/atom-center-screen#readme",
+  "license": "MIT",
+  "main": "./lib/simple-center-screen",
+  "name": "simple-center-screen",
+  "optionalDependencies": {},
+  "readme": "# simple-center-screen package\n\n`ctrl-l`: scroll cursor to the screen center\n\n![center-screen](https://cloud.githubusercontent.com/assets/5101573/11760809/c3079b7c-a05e-11e5-81ab-c832f4730227.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaunwei/atom-center-screen.git"
+  },
+  "version": "1.3.0"
+}

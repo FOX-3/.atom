@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11847-37106-12mkquv.ew7jsjor"
+    ]
+  ],
+  "_from": "../d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+  "_id": "remove-all-keybindings@0.2.1",
+  "_inCache": true,
+  "_location": "/remove-all-keybindings",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+  "_shasum": "ee9ced4f8df2ade2044081e3f3541fbff150d810",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11847-37106-1l6i8u2.dy6m20rudi/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11847-37106-12mkquv.ew7jsjor",
+  "bugs": {
+    "url": "https://github.com/KoharaKazuya/remove-all-keybindings/issues"
+  },
+  "dependencies": {},
+  "description": "Removes all keybindings, such as default, platform or package keymaps.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.193.0"
+  },
+  "homepage": "https://github.com/KoharaKazuya/remove-all-keybindings#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "remove-all-keybindings",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# Remove All Keybindings\n\nRemoves all keybindings, such as default, platform or package keymaps.\n\nTo enhance your keymap.\nYou don't need to care about new keymaps when installing any package.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoharaKazuya/remove-all-keybindings.git"
+  },
+  "version": "0.2.1"
+}

@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+        "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-29673-1d2qut3.kxcmsll3di"
+    ]
+  ],
+  "_from": "../d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+  "_id": "backspace-until-not-whitespace@0.1.8",
+  "_inCache": true,
+  "_location": "/backspace-until-not-whitespace",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+    "spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+  "_shasum": "39e1edfbde5f01c748aa31ea408341ec62f9e2eb",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/d-11845-29673-1l1rf3t.cwpkvp9zfr/package.tgz",
+  "_where": "/private/var/folders/pm/85wrns9949q5wmpm04v7z5kh0000gn/T/apm-install-dir-11845-29673-1d2qut3.kxcmsll3di",
+  "author": {
+    "name": "Jerry Yu"
+  },
+  "bugs": {
+    "url": "https://github.com/yubaoquan/backspace-until-not-whitespace/issues"
+  },
+  "dependencies": {},
+  "description": "Press backspace to delete all the trailing whitespaces in a line.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/yubaoquan/backspace-until-not-whitespace#readme",
+  "keywords": [
+    "delete",
+    "trailing",
+    "whitespace",
+    "backspace"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "backspace-until-not-whitespace",
+  "optionalDependencies": {},
+  "readme": "# backspace-until-not-whitespace package\n\nPress backspace to delete all the trailing whitespaces in a line.\n\n#### Simple delete trailing whitespaces.\n\n![Demo1](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/backspace-package-demo/oneLineDemo.gif)\n\n#### Auto delete whitespaces line by line until find one line not trailing with whitespaces\n\n![JS Demo](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/backspace-package-demo/js-demo.gif)\n\n![HTML Demo](https://raw.githubusercontent.com/yubaoquan/yubaoquan.github.io/master/images/backspace-package-demo/html-demo.gif)\n\nSetting:\n\n1. `Multi Line Delete`: Enable this options to enable a backspace delete until find a none-whitespace line.\n2. `Disabled File extensions`: This package will be disabled in files with suffix in this option .\n3. `Use Keybinding`: Delete trailing whitespaces by only press `delete` key or use your custom keybinding. If enable this, the default keybinding will be `shift-delete`.\n\n# Changelog\n\n0.1.0 init\n\n0.1.1\n\n1. Fix bug: options not showing up;\n2. Enhancement: Delete trailing spaces in none-blank line;\n\n0.1.5 Remove default disabled file type: html.\n\n0.1.6 Add keybinding option, so user can choose delete trailing spaces by backspace or other keybindings.\n\n0.1.7 Fix shift-delete and duplicated event listeners.\n\n0.1.8 Fix the wrong use of disposer causing an error when reload triggers.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yubaoquan/backspace-until-not-whitespace.git"
+  },
+  "version": "0.1.8"
+}

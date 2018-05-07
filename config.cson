@@ -1,5 +1,6 @@
 "*":
   "advanced-open-file":
+    createDirectories: true
     createFileInstantly: true
     fuzzyMatch: true
   "atom-beautify":
@@ -13,22 +14,42 @@
     confirmCompletion: "enter"
   autosave:
     enabled: true
+  "backspace-until-not-whitespace":
+    disabledFileExtensions: [
+      ".txt"
+      ".tex"
+    ]
   "bracket-matcher": {}
+  "command-palette":
+    preserveLastSearch: true
   core:
     closeDeletedFileTabs: true
     disabledPackages: [
       "wrap-guide"
       "swackets"
+      "atom-beautify"
+      "disable-keybindings"
     ]
     excludeVcsIgnoredPaths: false
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "clipboard-plus"
+      "view-mode"
+      "last-cursor-position"
+      "atom-terminal"
+      "backspace-until-not-whitespace"
+      "multi-cursor"
+      "command-palette"
+      "bookmarks"
+      "keybinding-resolver"
     ]
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+  "disable-keybindings":
+    allBundledPackages: true
   editor:
     fontFamily: "Inconsolata-g, Hiragino Kaku Gothic ProN"
+    fontSize: 15
     lineHeight: 1.3
     scrollPastEnd: true
     showIndentGuide: true
@@ -70,6 +91,10 @@
     fitToWidthOnOpen: true
   "persistent-undo":
     undoFolder: "undo-history"
+  "remove-all-keybindings":
+    exceptBaseKeymap: false
+    exceptPlatformKeymap: false
+  "spell-check": {}
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
@@ -93,6 +118,8 @@
   "sync-settings":
     _lastBackupHash: "3e582001582ea9d20c45663636a6be9ae3de7f59"
     gistId: "c5f85be225ed1a3c01689137224d5f86"
-    personalAccessToken: "a329917659d3af7573578640748771b82ae7760f"
+    personalAccessToken: "308eafb52d0c53504e05b713e18cadfbf1697e63"
+    syncSettings: false
+  "view-mode": {}
   welcome:
     showOnStartup: false

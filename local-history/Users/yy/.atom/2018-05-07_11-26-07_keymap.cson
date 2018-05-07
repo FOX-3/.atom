@@ -1,0 +1,229 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/customizing-keybindings
+# http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# http://flight-manual.atom.io/hacking-atom/sections/debugging/check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+
+# ------------------------------------------------------------------------------
+'atom-workspace atom-text-editor:not([mini])':
+
+  # -------------- 基本キーバインド ------------------
+  'tab': 'editor:indent'
+  'enter': 'editor:newline'
+  'cmd-]': 'editor:indent-selected-rows'
+  'cmd-[': 'editor:outdent-selected-rows'
+  # 'cmd-shift-d': 'editor:duplicate-lines'
+  # ------------------------------------------------
+
+  # コメントアウト
+  'cmd-;': 'editor:toggle-line-comments'
+
+  # カーソル行の上に空行を挿入
+  'ctrl-cmd-o': 'editor:newline-above'
+
+  # 無効化
+  # 'cmd-j': 'unset!'
+
+  # インデント整形
+  'ctrl-t': 'editor:auto-indent'
+
+
+
+
+# ------------------------------------------------------------------------------
+'atom-workspace':
+
+  # カーソル位置のundo, redo
+  'cmd-j': 'last-cursor-position:previous'
+  'cmd-k': 'last-cursor-position:next'
+
+  # ファイルのディレクトリをiTermで開く
+  'ctrl-cmd-l': 'atom-terminal:open'
+
+
+# ------------------------------------------------------------------------------
+'atom-text-editor':
+
+  # -------------- 基本キーバインド ------------------
+  'ctrl-a': 'editor:move-to-first-character-of-line'
+  'ctrl-e': 'editor:move-to-end-of-line'
+  'ctrl-k': 'editor:cut-to-end-of-line'
+  # 'cmd-shift-V': 'editor:paste-without-reformatting'
+  # ------------------------------------------------
+
+  # 括弧内の選択範囲拡大or縮小
+  'ctrl-\'': 'expand-region:expand'
+  'ctrl-"': 'expand-region:shrink'
+
+
+  # 段落選択
+  'ctrl-s': 'expand-region:select-inside-paragraph'
+
+  # ブックマーク
+  'ctrl-u ctrl-v': 'bookmarks:view-all'
+  'ctrl-u ctrl-v': 'bookmarks:view-all'
+  'ctrl-u ctrl-f': 'bookmarks:jump-to-next-bookmark'
+  'ctrl-u ctrl-d': 'bookmarks:jump-to-previous-bookmark'
+
+
+
+# ------------------------------------------------------------------------------
+'body':
+
+  # -------------- 基本キーバインド ------------------
+  'cmd-q': 'application:quit'
+  'ctrl-p': 'core:move-up'
+  'ctrl-n': 'core:move-down'
+  'ctrl-b': 'core:move-left'
+  'ctrl-f': 'core:move-right'
+  # 'ctrl-shift-p': 'core:select-up'
+  # 'ctrl-shift-n': 'core:select-down'
+  # 'ctrl-shift-f': 'core:select-right'
+  # 'ctrl-shift-b': 'core:select-left'
+  'ctrl-h': 'core:backspace'
+  'ctrl-d': 'core:delete'
+  'enter': 'core:confirm'
+  'escape': 'core:cancel'
+  'up': 'core:move-up'
+  'down': 'core:move-down'
+  'left': 'core:move-left'
+  'right': 'core:move-right'
+  'cmd-,': 'application:show-settings'
+  # 'cmd-shift-o': 'application:add-project-folder'
+  'cmd-shift-t': 'pane:reopen-closed-item'
+  'cmd-s': 'core:save'
+  'cmd-w': 'core:close'
+  'cmd-z': 'core:undo'
+  'cmd-shift-z': 'core:redo'
+  'cmd-x': 'core:cut'
+  'cmd-c': 'core:copy'
+  'cmd-v': 'core:paste'
+  # 'shift-up': 'core:select-up'
+  # 'shift-down': 'core:select-down'
+  # 'shift-left': 'core:select-left'
+  # 'shift-right': 'core:select-right'
+  'delete': 'core:delete'
+  'pageup': 'core:page-up'
+  'pagedown': 'core:page-down'
+  'backspace': 'core:backspace'
+  # 'cmd-up': 'core:move-to-top'
+  # 'cmd-down': 'core:move-to-bottom'
+  # 'cmd-shift-up': 'core:select-to-top'
+  # 'cmd-shift-down': 'core:select-to-bottom'
+  # 'cmd-k cmd-w': 'pane:close'
+  # 'cmd-k alt-cmd-w': 'pane:close-other-items'
+  # 'cmd-k cmd-p': 'window:focus-previous-pane'
+  # 'cmd-k cmd-n': 'window:focus-next-pane'
+  # ------------------------------------------------
+
+
+  # 貼り付け、切り取り
+  'ctrl-y': 'core:paste'
+  'ctrl-w': 'core:cut'
+
+  # タブ移動
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+
+  # undo, redo
+  'ctrl-j': 'core:undo'
+  'ctrl-cmd-j': 'core:redo'
+  'ctrl-shift-j': 'core:redo'
+
+  # 無効
+  # 'cmd-up':   'unset!'
+  # 'cmd-down': 'unset!'
+
+  # ペイン分割
+  'cmd-3': 'pane:split-right-and-copy-active-item'
+  'cmd-4': 'pane:split-down-and-copy-active-item'
+
+  # ペインのフォーカス移動
+  'ctrl-g': 'window:focus-next-pane'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin':
+
+  # コマンド
+  'cmd-.': 'key-binding-resolver:toggle'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-workspace':
+
+  # ファイルオープン
+  # 'alt-cmd-o': 'unset!'
+  'cmd-t': 'advanced-open-file:toggle'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-text-editor':
+
+  # スペルチェック
+  # 'cmd-:': 'abort!'
+  'ctrl-u ctrl-s': 'spell-check:correct-misspelling'
+
+  # ブックマーク
+  'ctrl-u ctrl-t': 'bookmarks:toggle-bookmark'
+  'ctrl-u ctrl-q': 'bookmarks:clear-bookmarks'
+
+# ------------------------------------------------------------------------------
+'.platform-darwin .corrections atom-text-editor':
+
+  # スペルチェック
+  # 'cmd-:': 'unset!'
+  'ctrl-u ctrl-s': 'core:cancel'
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin atom-text-editor:not([mini])':
+
+  # クリップボードの呼び出し
+  'ctrl-cmd-k': 'clipboard-plus:toggle'
+
+  # マルチカーソル
+  'cmd-up':   'multi-cursor:expandUp'
+  'cmd-down': 'multi-cursor:expandDown'
+
+
+
+
+# ------------------------------------------------------------------------------
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+
+  # コマンドパレット
+  'ctrl-cmd-p': 'command-palette:toggle'
+
+
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
